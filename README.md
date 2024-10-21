@@ -76,7 +76,7 @@ Data preprocessing steps were also performed and these included:
 
 ## Model Training
 
-Multiple models are trained and compared for performance:
+Multiple models were trained and compared for performance:
 
 1. **Logistic Regression**
               Accuracy: 0.7032
@@ -159,7 +159,7 @@ The following components were saved for future use:
 2. Scaler (`scaler.pkl`)
 3. Label encoder (`label_encoder.pkl`)
 
-Make sure to have the following dependencies installed, listed in requirements.txt:
+Make sure to have the following dependencies installed and ready for the deployment process listed in requirements.txt:
 `gradio`
 `joblib`
 `matplotlib`
