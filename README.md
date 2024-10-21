@@ -213,6 +213,7 @@ Once the files are added and configured, your Space will automatically build and
 
 **Accessing the Application**  
 After successful deployment, you can access your Gradio interface through the link provided by Hugging Face Spaces. Users can interact with the interface to make predictions using the deployed machine learning model.
+You can access the web application [HERE](https://huggingface.co/spaces/phenomkay/Bank_Churn)
 
 ---
 
