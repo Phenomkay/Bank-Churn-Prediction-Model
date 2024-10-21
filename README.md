@@ -2,7 +2,7 @@
 
 This repository contains the code for predicting customer churn in a bank using various machine learning models. The data used for training and testing the models is stored in `Bank_Churn.csv`.
 
-      ```
+---
 
 ## Table of Contents
 
@@ -17,19 +17,19 @@ This repository contains the code for predicting customer churn in a bank using 
 - [Conclusion](#conclusion)
 - [Acknowledgements](#acknowledgements)
 
-    ```
+---
 
 ## Overview
 
 The goal of this project is to predict if a bank customer will churn (exit) using various machine learning techniques. The dataset includes customer information such as credit score, geography, gender, age, balance, and other relevant features.
 
-    ```
+---
   
 ## Problem Statement
 
 The bank is experiencing a significant churn rate among its customers, which is impacting its revenue and overall business performance. Identifying the key factors that contribute to customer churn and developing a predictive model to forecast which customers are likely to exit can help the bank proactively address these issues. The goal of this project is to analyze customer data and build a machine learning model that can accurately predict customer churn, enabling the bank to implement targeted retention strategies and improve customer satisfaction.
 
-    ```
+---
 
 ## Dataset
 
@@ -49,7 +49,7 @@ The dataset `Bank_Churn.csv` consists of the following columns:
 - `EstimatedSalary`: Customer's estimated salary
 - `Exited`: Whether the customer has exited the bank (1 = Yes, 0 = No)
 
-    ```
+---
 
 ## Exploratory Data Analysis (EDA)
 
@@ -60,7 +60,7 @@ We performed some EDA by plotting the distributions of numerical variables and c
 - Bivariate relationships between `Age` & `CreditScore` vs `Exited` using scatter plots
 - Correlation heatmap for numerical variables
 
-      ```
+---
 
 ## Data Preprocessing
 
@@ -72,7 +72,7 @@ Data preprocessing steps were also performed and these included:
 4. Feature scaling using Standard Scaler
 5. Balancing the feature and target variable for training (`x_train`, `y_train`) using SMOTE (Synthetic Minority Over-sampling Technique).
 
-    ```
+---
 
 ## Model Training
 
@@ -81,7 +81,7 @@ Multiple models are trained and compared for performance:
 1. **Logistic Regression**
               Accuracy: 0.7032
               Classification Report:
-              precision    recall  f1-score
+              precision,  recall,  f1-score
 
            0       0.90      0.71      0.79
            1       0.37      0.68      0.48
@@ -90,7 +90,7 @@ Multiple models are trained and compared for performance:
 2. **Support Vector Machine (SVC)**
               Accuracy: 0.7884
               Classification Report:
-              precision    recall  f1-score
+              precision,   recall,  f1-score
 
            0       0.93      0.80      0.86
            1       0.48      0.74      0.58
@@ -99,7 +99,7 @@ Multiple models are trained and compared for performance:
 3. **K-Nearest Neighbors (KNN)**
               Accuracy: 0.742
               Classification Report:
-              precision    recall  f1-score
+              precision,    recall,  f1-score
 
            0       0.90      0.76      0.83
            1       0.41      0.67      0.51
@@ -108,7 +108,7 @@ Multiple models are trained and compared for performance:
 4. **Naive Bayes**
               Accuracy: 0.7432
               Classification Report:
-              precision    recall  f1-score
+              precision,    recall,  f1-score
 
            0       0.91      0.75      0.82
            1       0.42      0.71      0.52
@@ -117,7 +117,7 @@ Multiple models are trained and compared for performance:
 5. **Random Forest**
               Accuracy: 0.838
               Classification Report:
-              precision    recall  f1-score
+              precision,   recall,  f1-score
 
            0       0.90      0.90      0.90
            1       0.59      0.58      0.59
@@ -126,7 +126,7 @@ Multiple models are trained and compared for performance:
 6. **XGBoost**
               Accuracy: 0.8372
               Classification Report:
-              precision    recall  f1-score
+              precision,    recall,  f1-score
 
            0       0.91      0.88      0.90
            1       0.58      0.67      0.62
@@ -148,7 +148,7 @@ The models were evaluated based on:
 3. Confusion Matrix
 4. ROC Curve and AUC Score (for XGBoost)
 
-    ```
+---
 
 ## Saving the Models
 
@@ -160,14 +160,14 @@ The following components were saved for future use:
 3. Label encoder (`label_encoder.pkl`)
 
 Make sure to have the following dependencies installed, listed in requirements.txt:
-gradio
-joblib
-matplotlib
-seaborn
-numpy
-pandas
-scikit-learn
-xgboost
+`gradio`
+`joblib`
+`matplotlib`
+`seaborn`
+`numpy`
+`pandas`
+`scikit-learn`
+`xgboost`
 
 ---
 
@@ -183,18 +183,6 @@ Ensure you have the following files from your trained machine learning project:
 - scaler.pkl (Feature Scaler)
 - label_encoder.pkl (Label Encoder)
 - requirements.txt (python dependencies)
-
----
-
-**Installation**  
-Install Required Libraries
-
-Before deploying, make sure you have Gradio and Hugging Face Hub installed:
-
-```bash
-pip install gradio
-pip install huggingface_hub
-```
 
 ---
 
